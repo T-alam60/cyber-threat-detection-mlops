@@ -1,7 +1,7 @@
-pandas 
-numpy 
+pandas
+numpy
 matplotlib
-seaborn 
+seaborn
 python-dotenv
 pymongo
-##-e . 
+certifi
