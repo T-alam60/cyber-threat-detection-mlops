@@ -4,4 +4,4 @@ matplotlib
 seaborn 
 python-dotenv
 pymongo
-##-e . 
+##-e .
