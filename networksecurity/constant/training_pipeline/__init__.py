@@ -36,7 +36,7 @@ DATA_INGESTION_VAR_NAME.
 """
 
 # MongoDB collection name
-DATA_INGESTION_COLLECTION_NAME: str = "Network_Data"
+DATA_INGESTION_COLLECTION_NAME: str = "networkdata"
 
 # MongoDB database name
 DATA_INGESTION_DATABASE_NAME: str = "ALAMAI"
@@ -52,3 +52,6 @@ DATA_INGESTION_INGESTED_DIR: str = "ingested"
 
 # Train-test split ratio: 20% for testing
 DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO: float = 0.2
+
+#DATA_INGESTION_COLLECTION_NAME = "Network_Data"
+#DATA_INGESTION_COLLECTION_NAME = "networkdata"
