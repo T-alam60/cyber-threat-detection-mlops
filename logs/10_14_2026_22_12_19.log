@@ -1,0 +1,36 @@
+[ 2026-10-14 22:12:37,020 ] 32 networksecurity.loggings.logger - INFO - Initiate the data ingestion
+[ 2026-10-14 22:14:14,854 ] 110 networksecurity.loggings.logger - INFO - Train-test split completed successfully
+[ 2026-10-14 22:14:14,949 ] 141 networksecurity.loggings.logger - INFO - Training and testing files exported successfully
+[ 2026-10-14 22:14:14,950 ] 35 networksecurity.loggings.logger - INFO - Data Ingestion Completed
+[ 2026-10-14 22:14:14,965 ] 45 networksecurity.loggings.logger - INFO - Initiate the data validation
+[ 2026-10-14 22:14:15,148 ] 34 root - INFO - Required number of columns:2
+[ 2026-10-14 22:14:15,149 ] 35 root - INFO - Data frame has columns:31
+[ 2026-10-14 22:14:15,149 ] 34 root - INFO - Required number of columns:2
+[ 2026-10-14 22:14:15,149 ] 35 root - INFO - Data frame has columns:31
+[ 2026-10-14 22:14:15,444 ] 48 networksecurity.loggings.logger - INFO - Data Validation Completed
+[ 2026-10-14 22:14:15,445 ] 56 networksecurity.loggings.logger - INFO - Data Transformation Started
+[ 2026-10-14 22:14:15,446 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2026-10-14 22:14:15,447 ] 65 root - INFO - Starting data transformation
+[ 2026-10-14 22:14:15,508 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2026-10-14 22:14:15,510 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-10-14 22:14:15,540 ] 64 networksecurity.loggings.logger - INFO - Entered save_object method of MainUtils class
+[ 2026-10-14 22:14:15,548 ] 70 networksecurity.loggings.logger - INFO - Exited the save_object method of MainUtils class
+[ 2026-10-14 22:14:15,548 ] 64 networksecurity.loggings.logger - INFO - Entered save_object method of MainUtils class
+[ 2026-10-14 22:14:15,555 ] 70 networksecurity.loggings.logger - INFO - Exited the save_object method of MainUtils class
+[ 2026-10-14 22:14:15,557 ] 67 networksecurity.loggings.logger - INFO - Data Transformation Completed
+[ 2026-10-14 22:14:15,558 ] 69 networksecurity.loggings.logger - INFO - Model Training sstared
+[ 2026-10-14 22:19:31,492 ] 182 root - INFO - Best model selected: Random Forest
+[ 2026-10-14 22:19:31,497 ] 183 root - INFO - Best model score: 0.977885945756722
+[ 2026-10-14 22:19:45,440 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-10-14 22:19:45,755 ] 107 dagshub - INFO - Accessing as T-alam60
+[ 2026-10-14 22:19:51,787 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/T-alam60/cyber-threat-detection-mlops "HTTP/1.1 200 OK"
+[ 2026-10-14 22:19:56,538 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-10-14 22:19:56,547 ] 107 dagshub - INFO - Initialized MLflow to track repo "T-alam60/cyber-threat-detection-mlops"
+[ 2026-10-14 22:19:56,548 ] 107 dagshub - INFO - Repository T-alam60/cyber-threat-detection-mlops initialized!
+[ 2026-10-14 22:21:14,772 ] 116 root - INFO - MLflow metrics and model logged successfully.
+[ 2026-10-14 22:21:14,807 ] 64 networksecurity.loggings.logger - INFO - Entered save_object method of MainUtils class
+[ 2026-10-14 22:21:15,080 ] 70 networksecurity.loggings.logger - INFO - Exited the save_object method of MainUtils class
+[ 2026-10-14 22:21:15,082 ] 64 networksecurity.loggings.logger - INFO - Entered save_object method of MainUtils class
+[ 2026-10-14 22:21:15,171 ] 70 networksecurity.loggings.logger - INFO - Exited the save_object method of MainUtils class
+[ 2026-10-14 22:21:15,172 ] 248 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\10_14_2026_22_12_24\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9952267303102625, precision_score=0.9936457505957109, recall_score=0.9968127490039841), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9952267303102625, precision_score=0.9936457505957109, recall_score=0.9968127490039841))
+[ 2026-10-14 22:21:15,197 ] 74 networksecurity.loggings.logger - INFO - Model Training artifact created
