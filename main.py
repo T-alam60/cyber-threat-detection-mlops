@@ -13,6 +13,11 @@ from networksecurity.entity.config_entity import (
     TrainingPipelineConfig
 )
 
+
+from networksecurity.components.modeltrainer import ModelTrainer
+from networksecurity.entity.config_entity import ModelTrainerConfig
+ 
+
 import sys
 
 
@@ -61,5 +66,13 @@ if __name__ == "__main__":
         print(data_transformation_artifact)
         logger.info("Data Transformation Completed")
 
+        logger.info("Model Training sstared")
+        model_trainer_config=ModelTrainerConfig(trainingpipelineconfig)
+        model_trainer=ModelTrainer(model_trainer_config=model_trainer_config,data_transformation_artifact=data_transformation_artifact)
+        model_trainer_artifact=model_trainer.initiate_model_trainer()
+
+        logger.info("Model Training artifact created")
+        
+
     except Exception as e:
-        raise NetworkSecurityException(e, sys) from e
+        raise NetworkSecurityException(e, sys) 
